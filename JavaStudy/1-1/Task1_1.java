@@ -20,7 +20,7 @@ public class Task1_1{
         String hogeString = "合格";
         
         // 変数 hogeint の値を表示
-        System.out.printlnln(hogeInt);
+        System.out.println(hogeInt);
         
         //下記の処理について、何をしているのかコメントを記入
         //変数 hogestring の値を表示
