@@ -19,15 +19,15 @@ public class Task1_4 {
 
         //名前が「alice」、パスワードが「pass」であった場合、「ログイン成功です。」と出力
 
-        if (name == NAME && pass == PASS) {
+        if (name.equals("alice") && pass.equals("pass")) {
             System.out.println(CONST_MSG_SUCCESS);
         }
         //名前のみ正しい場合、「パスワードに誤りがあります。」と出力
-        else if (name == NAME && pass != PASS) {
+        else if (name.equals("alice")) {
             System.out.println(CONST_MSG_ERROR_PASS);
         }
         //パスワードのみ正しい場合、「名前に誤りがあります。」と出力
-        else if (name != NAME && pass == PASS) {
+        else if (pass.equals("pass")) {
             System.out.println(CONST_MSG_ERROR_NAME);
         }
         //名前もパスワードも間違っていた場合は「入力情報に誤りがあります。」と出力
