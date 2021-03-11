@@ -1,4 +1,7 @@
 package study;
+
+import javax.swing.plaf.basic.BasicTreeUI.NodeDimensionsHandler;
+
 public class Main {
 	public static void main(String[] args) {
 
@@ -6,11 +9,10 @@ public class Main {
 		String lastName = "Toishi";
 		System.out.println(getName(firstName,lastName));
 		System.out.println();
+
 		int[] arr = {1,2,3,4,5,6,7,8,9,10};
-		for(int n=0; n<=9;n++) {
-			if(n % 2 != 0){
-				System.out.println(n+"は奇数です。");
-			}
+		for(int num=0; num<=9;num++) {
+			isOdd(num);
 		}
 	}
 	public static String getName(String firstName,String lastName) {
