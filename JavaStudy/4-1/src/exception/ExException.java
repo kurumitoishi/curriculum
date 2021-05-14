@@ -100,8 +100,10 @@ public class ExException {
      * ルール1: private static void 任意のメソッド名 throws 上位へ投げるExceptionクラス名 { NullPointerExceptionを発生させる処理 }
      * ルール2: 例外発生時に設定するメッセージは、定義済みの定数から適当なものを指定してください。
      */
-    private static void printNull() throws NullPointerException {
-    	System.out.println("java.long.NullPointerException:" + CONST_MSG_NULLPO);
+    
+    	private static void printNull() throws NullPointerException{
+    
+    	throw new NullPointerException(CONST_MSG_NULLPO);
     }
 
     /**
